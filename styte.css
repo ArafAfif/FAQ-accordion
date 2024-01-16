@@ -1,0 +1,112 @@
+:root{
+    --whiteColor: hsl(0, 0%, 100%);
+    --lightColorpink: hsl(275, 100%, 97%);
+    --grayishPurpleColor: hsl(292, 16%, 49%);
+    --darkPurpleColor: hsl(292, 42%, 14%);
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background: var(--lightColorpink) url("images/background-pattern-desktop.svg") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+p{
+   font-weight: 400;
+   font-size: 1em;
+   color: var(--grayishPurpleColor); 
+   display: none;
+}
+img{
+    max-width: 100%;
+}
+.faqs{
+    width: 600px;
+    background: var(--whiteColor);
+    border-radius: 20px;
+    padding: 40px;
+}
+.faqs h1 img{
+    width: 32px;
+    height: 32px;
+}
+.faqs h1{
+    display: flex;
+    align-items: center;
+    font-size: 2.813em;
+    color: var(--darkPurpleColor);
+}
+.faqs section{
+    padding: 30px 0;
+    border-bottom: 1px solid var(--lightColorpink);
+}
+.faqs section:last-child{
+    border: none;
+    padding-bottom: 0;
+}
+.faqs section div{
+    margin-bottom: 30px;
+}
+.faqs section span{
+    font-weight: 600;
+    color: var(--darkPurpleColor);
+    font-size: 1.125em;
+    cursor: pointer;
+    display: inline-block;
+    width: 90%;
+}
+.faqs section span:hover{
+    color: #982BE2;
+}
+.faqs section button{
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+}
+.paragraph{
+    display: inline;
+}
+/*Responsive*/
+@media only screen and (max-width: 600px) {
+    html,
+    body{
+        height: auto;
+    }
+    .faqs{
+        width: 320px;
+        margin: 15px 0;
+    }
+    .faqs section span{
+        width: 200px;
+        font-size: 0.875em;
+    }
+    p{
+        font-size: 0.75em;
+        margin: 0 auto;
+    }
+}
