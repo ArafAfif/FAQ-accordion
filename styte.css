@@ -97,6 +97,9 @@ img{
     body{
         height: auto;
     }
+    body{
+        background: url(images/background-pattern-mobile.svg) no-repeat;
+    }
     .faqs{
         width: 320px;
         margin: 15px 0;
